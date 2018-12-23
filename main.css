@@ -1,0 +1,273 @@
+*{
+    overflow: inherit;
+}
+html{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    scroll-behavior: unset;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    margin:0;
+    padding:0;
+}
+
+#ChampPage{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.animline{
+    width:90vw;
+    height:5px;
+    background-color:aqua;
+    border-radius:2px;
+}
+
+
+#Subject,#Hero{
+    Color:aqua;
+    font-family: monospace;
+    font-size: 40px;
+    font-weight: bold;
+    opacity:1;
+}
+
+#logo{
+    font-size:10em;
+    color:aqua;
+    font-family: sans-serif;
+}
+
+#Entrbtn{
+    color:aqua;
+    background: white;
+    padding:10px;
+    padding-top:12px;
+    padding-bottom: 12px;
+    border:5px solid aqua;
+    border-radius:50%;
+    text-align: center;
+    font-size:20px;
+    font-weight: bold;
+    position: fixed;
+    bottom:10vh;
+    display:none;
+}
+
+#PrefPage{
+
+    display: none;
+    background-color: rgb(255, 255, 255);
+    
+}
+#prefs{
+    display: grid;
+    height:60vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+#prefs div{
+    justify-self: stretch;
+    align-self: center;
+    text-align:center;
+}
+
+#PrefPage button{
+    background-color: rgba(255, 255, 255, 0);
+    border:none;
+    outline:none;
+    color:aqua;
+    font-family:monospace;
+    font-weight: bold;
+    font-size:4em;
+    position: fixed;
+    bottom:10vh;
+    width:100vw;
+
+    text-shadow: 2px 2px 10px rgb(38, 18, 56);
+}
+#startbtn:hover{
+    color:coral;
+}
+
+
+/*question page content*/
+#QuesPage{
+    display : none;
+}
+
+#dataPanel{
+    width:100vw;
+    height:9vh;
+    color:rgb(0, 0, 0);
+    display:flex;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: monospace;
+}
+
+#Serial{
+    align-self: stretch;
+    width: 55%;
+    padding: 10px 0;
+    text-align: center;
+    border:1px dotted black;
+    border-right: none;
+    background-color: rgb(166, 255, 181);
+}
+#Timer{
+    width: 45%;
+    align-self: stretch;
+    padding: 10px 0;
+    text-align: center;
+    background-color: rgb(166, 255, 181);
+    border:1px dotted black;
+}
+
+/*Question and option divs*/
+
+#Question{
+    display: flex;
+    justify-content: center;
+}
+
+
+#QUERY{
+    text-align: center;
+    word-wrap: normal;
+    margin: 2% 0;
+    padding:2% 0;
+    max-height: 40vh;
+    font-size: 1.5em;
+    overflow: auto;
+    font-family: monospace;
+    align-self: stretch;
+    background-color:rgba(0, 255, 255, 0.7);
+    border: 5px solid rgb(5, 11, 70);
+}
+
+
+
+#options{
+    display: flex;
+    width:100vw;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom:30vh;
+}
+
+.option{
+    width:50vw;
+    height:10vh;
+    display: flex;
+    background-color: #ffffff;
+    justify-content: center;
+}
+.option button{
+    align-self: center;
+    width:90%;
+    height:90%;
+    margin: 5px;
+    outline: none;
+    background-color: rgb(255, 255, 255);;
+    border:3px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-family: monospace;
+    overflow: auto;
+    font-weight: bold;
+}
+
+
+/*bottom panel*/
+#confirm{
+    position:fixed;
+    bottom:5vh;
+    left:5vw;
+    width:40vw;
+    height: 10vh;
+}
+#cnfrmbtn{
+    width:100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    outline:none;
+    border-radius:20px;
+    border: 5px solid purple;
+    font-size:1.3em;
+    font-family: monospace;
+    font-weight: bold;
+    display: none;
+}
+
+#Next{
+
+    position: fixed;
+    bottom:5vh;
+    right:5vw;
+    width:40vw;
+    height:10vh;
+}
+
+#nxtbtn{
+
+    width:100%;
+    height:100%;
+    background-color: rgb(255, 255, 255);
+    outline:none;
+    border-radius:20px;
+    border: 5px solid purple;
+    font-size:1.3em;
+    font-family: monospace;
+    font-weight: bold;
+    display: none;
+}
+
+#cover{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0);
+    color:white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 2em;
+    display: none;
+}
+#flexCover{
+    width:100%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#ResultPage{
+    position: fixed;
+    top:0;
+    left:0;
+    background-color: black;
+    width : 100vw;
+    height : 100vh;
+    flex-flow: column;
+    justify-content: space-around;
+    align-items: center;
+    font-family: monospace;
+    font-size: 1.5em;
+    color:aqua;
+    display: none;
+}
+
+#ResultPage p{
+    font-size:2em;
+}

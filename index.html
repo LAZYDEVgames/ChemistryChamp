@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CHEMISTRY CHAMP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="custom.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="anim.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id = "ChampPage">
+        <div class="animline" id="animline1"></div>
+        <div id="Subject">CHEMISTRY</div>
+        <div id="Hero">CHAMP</div>
+        <div class="animline" id="animline2"></div>
+        <div id="logo">&infin;</div>
+        <div id="Entrbtn" onclick="EndChamp()">GO</div>
+    </div>
+   
+    <div id="PrefPage">
+        <div id="prefs">
+            <div id="diffdiv">
+                <label for="difficulty">DIFFICULTY : <br/>
+                    <select name="Difficulty" id="DiffList">
+                        <option value= 0 >EASY</option>
+                        <option value= 1 >MEDIUM</option>
+                        <option value= 2 >HARD</option>
+                    </select>
+                </label>
+            </div>
+            
+            <div id = "numdiv">
+                <label for="NumList"> NUMBER OF QUESTIONS : <br/>
+                    <select name="NumQues" id="NumList">
+                     <option value= 5  >5 </option>
+                    <option value= 10 >10</option>
+                    <option value= 20 >20</option>
+                    <option value= 30 >30</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="timediv">
+                <label for="Timelist">
+                    Time per Question : <br/>
+                    <select name="QuesTime" id="TimeList">
+                        <option value= 1 >1 minute</option>
+                        <option value= 2 >2 minute</option>
+                        <option value= 3 >3 minute</option>
+                        <option value= 5 >5 minute</option>
+                    </select>
+                </label>
+            </div>
+        </div>
+
+        <button id = "startbtn" onclick="StartTest()">START</button>
+
+
+
+    </div>
+
+    <div id="QuesPage">
+        <div id="dataPanel">
+            <div id="Serial">Question : 25</div>
+            <div id="Timer">Time-00:00</div>
+        </div>
+        <div id="question">
+            <div id="QUERY"><h3 id='Title'>This is the Question....</h3></div>
+            <div id="options">
+                <div class="option"><button onclick="Cheak(this)" value = 1 id="OPTION1" selecetd = false >option 1</button></div>
+                <div class="option"><button onclick="Cheak(this)" value = 0 id="OPTION2" selected = false >option 2</button></div>
+                <div class="option"><button onclick="Cheak(this)" value = 0 id="OPTION3" selected = false >option 3</button></div>
+                <div class="option"><button onclick="Cheak(this)" value = 0 id="OPTION4" selected = false >option 4</button></div>
+            </div>
+        </div>
+        <div id='Runner'>
+            <div id="confirm"> <button id="cnfrmbtn" onclick="CheakScore()" value = 0 >SUBMIT</button></div>
+            <div id="Next"> <button id="nxtbtn" onclick="ShowNext()">NEXT</button></div>
+        </div>
+    </div>
+
+    <div id="cover"><div id="flexCover"><h2>Preparing Quiz...</h2></div></div>
+
+    <div id="ResultPage">
+        <p>Test Over</p>
+
+        <div id="resQues">Correct Answers : 3/5</div>
+        <div id="resTime">mean time taken : 30 sec</div>
+        <div id="resScore">Score : 30/50</div>
+        <div id="highScore">Best Score : 40/50</div>
+
+        <div id="menubtn"><button id="NewTestbtn" onclick="NewTest()">New Test</button></div>
+    </div>
+</body>
+</html>

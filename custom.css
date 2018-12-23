@@ -1,0 +1,25 @@
+label{
+    color:rgb(0, 0, 0);
+    font-family: monospace;
+    font-size:1.5em;
+    font-weight: 1000;
+    text-align: center;
+}
+
+select{
+    color:aqua;
+    font-family: verdana;
+    border: 3px solid aqua;
+    border-radius:1em;
+    text-align: center;
+    outline:none;
+    margin-top:10px;
+    padding: 10px;
+    background: #000;
+}
+
+option{
+    color:aqua;
+    background-color: rgb(0, 0, 0);
+    font-family: 'Courier New', Courier, monospace;
+}

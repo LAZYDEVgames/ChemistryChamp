@@ -1,0 +1,20 @@
+#Subject,#Hero,#logo{
+    animation: appear 4s ease-in;
+}
+
+.animline{
+    animation: expand 3s ease-in;
+}
+@keyframes appear{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+
+@keyframes expand{
+    from{
+        width:0;
+    }
+    to{
+        width:90vw;
+    }
+}
